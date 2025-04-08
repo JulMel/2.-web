@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  background-color: #3e2723;
+}
+
+nav ul {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  width: 145px; /* když něco floatuju, mují nastavit šířku jednotlivých pložek */
+  list-style-type: none; /* odstraním odrážky */
+  float: left; /* vše bude vedle sebe */
+  text-align: center;
+  line-height: 40px; /* udělá prostor nahoře a dole kolem textu (jako padding) */
+  font-size: 15px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+} /* když používám float, musím ho tímto kodem ukončit */
+
+nav ul li a {
+  text-decoration: none;
+  color: #d7ccc8;
+}
+
+nav ul li a:hover {
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+
+#logo {
+  background-color: black;
+} /* černá plocha */
+
+.logo {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 43px;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+main h2 span {
+  font-size: 50px;
+}
+
+#beans {
+  position: relative; /* Aby `position: absolute` fungovalo uvnitř */
+}
+
+#beans img {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(95%); /* Tento trik těžiště přesune zpět do středu */
+  left: 0;
+  width: 500px;
+  z-index: -1; /* Pošle obrázek za obsah */
+}
+
+footer {
+  position: relative; /* Zachová patičku nad obrázkem */
+  top: 172px;
+  background-color: #6d4c41;
+  color: #fff; /* Pro lepší čitelnost */
+  padding-bottom: 0px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Vycentruje všechny bloky */
+  gap: 50px; /* Rovnoměrné mezery mezi bloky */
+}
+
+.footer-open,
+.footer-adresa,
+.footer-newsletter {
+  flex: content; /* Zajistí, že všechny bloky budou mít stejnou šířku */
+  max-width: 300px; /* Omezí maximální šířku bloků, aby nebyly moc roztažené */
+}
+
+.footer-newsletter form input {
+  width: 90%; /* Pole na e-mail bude široké jako blok */
+  padding: 8px;
+  margin-top: 5px; /* Mezery mezi prvky ve formuláři */
+}
+
+form input[type="email"] {
+  text-align: center;
+}
+
+form input[type="submit"] {
+  background-color: #d7ccc8;
+  color: #3e2723;
+}
+
+p {
+  line-height: 1.6; /* Větší mezera mezi řádky */
+  font-size: 12px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#copy {
+  background-color: #3e2723;
+  color: #d7ccc8;
+  padding: 20px;
+  position: relative;
+  top: 8px;
+}
+
+/*menu*/
+
+.menu {
+  text-align: center;
+  background-color: black;
+  color: #f5f5f5;
+  padding: 32px;
+}
+
+.menu h1 {
+  font-size: 40px;
+  position: relative;
+  top: 20px;
+}
+
+.menu h2 {
+  position: relative;
+  bottom: 20px;
+}
+
+.obrazky {
+  display: flex;
+  justify-content: center; /* Vycentruje obrázky horizontálně */
+  gap: 20px; /* Rovnoměrné mezery mezi obrázky */
+  padding: 50px 0; /* 50px mezery nahoře a dole */
+  margin-top: 90px;
+}
+
+.obrazky img {
+  width: 200px; /* Nastav šířku obrázků podle potřeby */
+  height: auto; /* Udrží správný poměr stran */
+}
+
+#copy-menu {
+  background-color: #3e2723;
+  color: #d7ccc8;
+  padding: 20px;
+  position: relative;
+  bottom: 80px;
+}
