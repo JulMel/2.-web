@@ -6,19 +6,19 @@ Projekt vznikl v rámci kurzu HTML a CSS. Sloužil mi k procvičení základní 
 
 ---
 
-## 🛠️ Použité technologie
+## Použité technologie
 - HTML
 - CSS
 
 ---
 
-## 📸 Ukázka
+## Ukázka
 
 <img width="800" alt="WEB2-coffee" src="https://github.com/user-attachments/assets/a75dcaaa-ff0e-4561-b0d9-22e7594f5f8b" />
 
 ---
 
-## 🧠 Co jsem se naučila
+## Co jsem se naučila
 - Tvorba vícestránkového webu
 - Práce s navigačním menu a odkazy
 - Stylování textu, obrázků a sekcí
